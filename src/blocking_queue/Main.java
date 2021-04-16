@@ -12,19 +12,13 @@ public class Main {
         BlockingQueue<Integer> bqueue
             = new ArrayBlockingQueue<Integer>(4);
   
-        // Create 1 object each for producer
-        // and consumer and pass them the common
-        // buffer created above
+        // Create 1 object each for producer and consumer
         Producer p1 = new Producer(bqueue);
         Consumer c1 = new Consumer(bqueue);
   
-        // Create 1 thread each for producer
-        // and consumer and pass them their
-        // respective objects.
+        // Create 1 thread each for producer and consumer
         Thread pThread = new Thread(p1);
         Thread cThread = new Thread(c1);
-  
-        // Start both threads
         pThread.start();
         cThread.start();
     }
