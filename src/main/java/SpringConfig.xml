@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="restaurantBean" class="com.ravi.springdemo.Restaurant">
+
+		<property name="restaruantWaitersList">
+			<list>
+				<value>Mr. ABC</value>
+				<value>Mr. BCD</value>
+				<value>Mr. DEF</value>
+				<value>Mr. DEF</value>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>
